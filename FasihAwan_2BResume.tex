@@ -1,0 +1,93 @@
+% LaTeX resume using res.cls
+\documentclass[margin]{res}
+%\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
+%\usepackage{newcent}   % uses new century schoolbook postscript font 
+\setlength{\textwidth}{5.1in} % set width of text portion
+
+\begin{document}
+
+% Center the name over the entire width of resume:
+ \moveleft.5\hoffset\centerline{\large\bf Fasih Awan}
+% Draw a horizontal line the whole width of resume:
+ \moveleft\hoffset\vbox{\hrule width\resumewidth height 0.5pt}\smallskip
+% address begins here
+% Again, the address lines must be centered over entire width of resume:
+ \moveleft.5\hoffset\centerline{2B Software Engineering}
+ \moveleft.5\hoffset\centerline{Email: fasihawan@gmail.com}
+ \moveleft.5\hoffset\centerline{Phone: (226) 989 2957}
+
+
+\begin{resume}
+
+
+\section{EXPERIENCE} {\sl Software Engineer Co-Op} \hfill January 2013 - April 2013 \\
+				Locationary, Toronto, ON 
+                 \begin{itemize}  \itemsep -2pt %reduce space between items
+                 \item Fixed bugs and added new features in the Java web-backend and JSP frontend
+                \item Created a FileUpload system using an open-source JavaScript library and a PHP backend script for use with Locationary system
+
+                \item Worked in an Agile environment with daily stand up meetings
+                \end{itemize}
+ 
+                {\sl QA Analyst} \hfill            May 2013 - August 2013 \\
+				Kobo Books, Toronto, ON
+                 \begin{itemize}  \itemsep -2pt %reduce space between items
+                 \item Tested Kobo Android Reading application through different scenarios
+                 \item Worked in an Agile development environment
+                 \item Tested iOS application for language localization
+                 \end{itemize} 
+
+% Draw a horizontal line the whole width of resume:
+ \moveleft\hoffset\vbox{\hrule width\resumewidth height 0.5pt}
+ 
+\section{PERSONAL PROJECTS}             
+		{\sl Toronto Co-Op Housing,}
+		\begin{itemize}\itemsep -2pt
+		\item Produces heatmap of housing prices near vicinity of user's co-op placement
+		\item Created webscrapers using Ruby to collect data on housing prices
+		\item Created at the LinkedIn Hackathon with two other members
+		\end{itemize}
+		{\sl Map Creator,}
+		\begin{itemize}\itemsep -2pt
+		\item Allows user to create a map in a $n \cdot n$ grid with image blocks
+		\item Created using Java and the SWING framework
+		\end{itemize}
+		{\sl Project Reference:} github.com/Ommy
+		
+% Draw a horizontal line the whole width of resume:
+ \moveleft\hoffset\vbox{\hrule width\resumewidth height 0.5pt}
+
+ 
+\section{EDUCATION} {\sl Bachelor of Software Engineering,} \\
+                      % \sl will be bold italic in New Century Schoolbook (or
+	              % any postscript font) and just slanted in
+		      %	Computer Modern (default) font
+                University of Waterloo, Canada 
+                expected April 2016 
+                
+				{\bf Relevant Assignments}\\
+				{\sl WLPP Parser} \\
+				Foundations of Sequential Programming
+				\begin{itemize}\itemsep -2pt
+				\item Created a parser in Java for subset of C language, WLPP, to parse to the MIPS assembly language
+				\end{itemize}				                
+                {\bf Relevant Courses} \\
+                Foundations of Sequential Programming, Programming Principles
+                
+% Draw a horizontal line the whole width of resume:
+ \moveleft\hoffset\vbox{\hrule width\resumewidth height 0.5pt}
+
+\section{SKILLS}
+	\begin{itemize}\itemsep -2pt
+		\item Knowledge and experience in: Java, Ruby, Git, JavaScript (jQuery), C++
+		\item Experience working in a UNIX environment  
+		\item Knowledge of various Object Oriented Programming principles
+		\item Experience working in an Agile Development Cycle gained through work experience
+		\item Experience in Android application development gained through self-learning
+\end{itemize}
+\end{resume}
+\end{document}
+
+
+
+
