@@ -3,6 +3,9 @@
 %\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
 %\usepackage{newcent}   % uses new century schoolbook postscript font 
 \setlength{\textwidth}{5.1in} % set width of text portion
+% Modify top and bottom margins to get rid of a lot of the whitespace
+\addtolength{\topmargin}{-.15in}
+\addtolength{\textheight}{1in}
 
 \begin{document}
 
@@ -10,11 +13,10 @@
  \moveleft.5\hoffset\centerline{\large\bf Fasih Awan}
 % Draw a horizontal line the whole width of resume:
  \moveleft\hoffset\vbox{\hrule width\resumewidth height 0.5pt}\smallskip
-% address begins here
-% Again, the address lines must be centered over entire width of resume:
+
  \moveleft.5\hoffset\centerline{3A Software Engineering}
  \moveleft.5\hoffset\centerline{Email: fasihawan@gmail.com}
-%  \moveleft.5\hoffset\centerline{Phone: (650) 300 9613}
+
 
 
 \begin{resume}
@@ -22,13 +24,13 @@
 
 \section{SKILLS}
 	\begin{itemize}\itemsep -2pt
-		\item Knowledge and experience in: Java, C++, Python, Bash, Ruby, Git
+		\item Knowledge and experience in: Java, C++, Bash, Ruby, Git, Python
 		\item Experience working in a Linux/UNIX environment  
 		\item Knowledge of various Object Oriented Programming principles
-		\item Knowledge of several data structures and design patters
+		\item Experience with several tools and libraries such as Android, SWING, JUnit, Microsoft EWS
 \end{itemize}
 
-% Draw a horizontal line the whole width of resume:
+
  \moveleft\hoffset\vbox{\hrule width\resumewidth height 0.5pt}
  
 \section{EXPERIENCE} 
@@ -46,11 +48,20 @@
                  \item Fixed bugs and added new features in the Java web-backend and JSP frontend
                  \item Fixed several business logic related issues on the backend
                 \item Created a FileUpload system using an open-source JavaScript library and a PHP backend script for use with Locationary's system
+                \item Wrote unit tests in JUnit to verify functionality of tasks
                 \end{itemize}
+                {\sl QA Analyst} \hfill            May 2012 - August 2012 \\
+		          Kobo Books, Toronto, ON
+                   \begin{itemize}  \itemsep -2pt %reduce space between items
+                  \item Tested Kobo Android Reading application through different scenarios
+                  \item Tested Android application through different scenarios
+                   \item Worked in an Agile development environment
+                   \item Tested iOS application for language localization
+                   \end{itemize} 
  
            
 
-% Draw a horizontal line the whole width of resume:
+
  \moveleft\hoffset\vbox{\hrule width\resumewidth height 0.5pt}
  
 \section{PERSONAL PROJECTS}             
@@ -67,21 +78,15 @@
 		\end{itemize}
 		{\sl Project Reference:} github.com/Ommy
 		
-% Draw a horizontal line the whole width of resume:
+
  \moveleft\hoffset\vbox{\hrule width\resumewidth height 0.5pt}
 
  
-\section{EDUCATION} {\sl Bachelor of Software Engineering,} \\
+\section{EDUCATION} {\sl Bachelor of Software Engineering,}\hfill  September 2011 - April 2016 (Expected) \\
                 University of Waterloo, Canada 
-                expected April 2016 
-                
-				{\bf Relevant Assignments}\\
-				{\sl WLPP Parser} - Foundations of Sequential Programming
-				\begin{itemize}\itemsep -2pt
-				\item Created a parser in Java for subset of C language, WLPP, to parse to the MIPS assembly language
-				\end{itemize}				                
+                \\ \\
                 {\bf Relevant Courses} \\
-                Software Abstraction and Specification, Data Structures and Data Management
+				Data Structures and Data Management, Operating Systems, User Interfaces, Software Abstraction and Specification
                 
 \end{resume}
 \end{document}
