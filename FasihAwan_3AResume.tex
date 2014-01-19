@@ -1,11 +1,17 @@
 % LaTeX resume using res.cls
-\documentclass[margin]{res}
+\documentclass[a4paper, letterpaper]{res}
+\usepackage[letterpaper,margin=1in]{geometry}
+%\documentclass[a4paper]{article}
 %\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
 %\usepackage{newcent}   % uses new century schoolbook postscript font 
-\setlength{\textwidth}{5.1in} % set width of text portion
+%\setlength{\textwidth}{5.1in} % set width of text portion
 % Modify top and bottom margins to get rid of a lot of the whitespace
-\addtolength{\topmargin}{-.15in}
-\addtolength{\textheight}{1in}
+\addtolength{\topmargin}{-.35in}
+\addtolength{\textheight}{0.6in}
+
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+\newcommand{\tab}[1]{\hspace{.2\textwidth}\rlap{#1}}
+
 
 \begin{document}
 
@@ -15,7 +21,7 @@
  \moveleft\hoffset\vbox{\hrule width\resumewidth height 0.5pt}\smallskip
 
  \moveleft.5\hoffset\centerline{3A Software Engineering}
- \moveleft.5\hoffset\centerline{Email: fasihawan@gmail.com}
+ \moveleft.5\hoffset\centerline{fasihawan@gmail.com}
 
 
 
@@ -23,6 +29,8 @@
 
 
 \section{SKILLS}
+	% Varying new line negative lengths to fix weird spacing differentiation among different sections
+	~\\[-8mm]	
 	\begin{itemize}\itemsep -2pt
 		\item Knowledge and experience in: Java, C++, Bash, Ruby, Git, Python
 		\item Experience working in a Linux/UNIX environment  
@@ -34,7 +42,9 @@
  \moveleft\hoffset\vbox{\hrule width\resumewidth height 0.5pt}
  
 \section{EXPERIENCE} 
-				{\sl Software Engineer Intern} \hfill            September 2013 - December 2013 \\
+				% ghost text 2spooky4me
+				~\\[-2mm]
+				{\sl Software Engineer Intern} \hspace*{2.6in}September 2013 - December 2013  \\
 				Axcient, Mountain View, CA, USA
                  \begin{itemize}  \itemsep -2pt %reduce space between items
                  \item Wrote Bash scripts to improve on regression drivers for hardware level testing
@@ -42,34 +52,32 @@
                  \item Wrote Python code to setup Linux based tasks to run file backups through a Windows host
                  \item Worked with Exchange Server to switch from MAPI protocol to use Microsoft's EWS API
                  \end{itemize} 
-				{\sl Software Engineer Co-Op} \hfill January 2013 - April 2013 \\
+				{\sl Software Engineer Co-Op} \hspace*{3in}January 2013 - April 2013 \\
 				Locationary, Toronto, ON 
                  \begin{itemize}  \itemsep -2pt %reduce space between items
                  \item Fixed bugs and added new features in the Java web-backend and JSP frontend
                  \item Fixed several business logic related issues on the backend
-                \item Created a FileUpload system using an open-source JavaScript library and a PHP backend script for use with Locationary's system
+                \item Created a FileUpload system using an open-source JavaScript library and a PHP backend\\ script for use with Locationary's system
                 \item Wrote unit tests in JUnit to verify functionality of tasks
                 \end{itemize}
-                {\sl QA Analyst} \hfill            May 2012 - August 2012 \\
+                {\sl QA Analyst}             \tab{\tab{\tab{May 2012 - August 2012}}} \\
 		          Kobo Books, Toronto, ON
                    \begin{itemize}  \itemsep -2pt %reduce space between items
                   \item Tested Kobo Android Reading application through different scenarios
                   \item Tested Android application through different scenarios
-                   \item Worked in an Agile development environment
                    \item Tested iOS application for language localization
                    \end{itemize} 
  
            
 
-
  \moveleft\hoffset\vbox{\hrule width\resumewidth height 0.5pt}
  
-\section{PERSONAL PROJECTS}             
+\section{PROJECTS}
+		~\\[-2mm]
 		{\sl Toronto Co-Op Housing,}
 		\begin{itemize}\itemsep -2pt
 		\item Produces heatmap of housing prices near vicinity of user's co-op placement
 		\item Created webscrapers using Ruby to collect data on housing prices
-		\item Created at the LinkedIn Hackathon with two other members
 		\end{itemize}
 		{\sl Map Creator,}
 		\begin{itemize}\itemsep -2pt
@@ -80,13 +88,15 @@
 		
 
  \moveleft\hoffset\vbox{\hrule width\resumewidth height 0.5pt}
-
  
-\section{EDUCATION} {\sl Bachelor of Software Engineering,}\hfill  September 2011 - April 2016 (Expected) \\
+\section{EDUCATION} 
+				~\\[-2mm]
+				{\sl Bachelor of Software Engineering,} 
+											\hspace*{1.636in}September 2011 - April 2016 (Expected) \\
                 University of Waterloo, Canada 
                 \\ \\
                 {\bf Relevant Courses} \\
-				Data Structures and Data Management, Operating Systems, User Interfaces, Software Abstraction and Specification
+				Data Structures and Data Management, Operating Systems, User Interfaces, Software Abstraction\\ and Specification
                 
 \end{resume}
 \end{document}
